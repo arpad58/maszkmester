@@ -1,0 +1,16 @@
+<p>product-list2 works! ngFor -ral</p>
+<div class="container">
+  <div class="row">
+    <div *ngFor="let card of cards" class="col-12 col-md-6 col-lg-3 d-flex flex-wrap">
+        <div class="card  mb-4 mb-md-4 " >
+          <img class="card-img-top" src="{{ card.image }}" alt="{{card.imageAlt}}">
+          <div class="card-body alert-dark ">
+            <h5 class="card-title font-weight-bold">{{ card.cardTitle }}</h5>
+            <p class="card-text">{{ card.cardText }}
+            </p>
+            <h4 class="card-price font-weight-bold mt-auto mb-0 text-right">{{ card.price}} Ft</h4>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

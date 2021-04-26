@@ -1,0 +1,16 @@
+<p>mask-list works! ngFor -ral és mask-service -vel</p>
+<div class="container">
+  <div class="row">
+    <div *ngFor="let maskCard of cards" class="col-12 col-md-6 col-lg-3 d-flex flex-wrap">
+        <div class="card  mb-4 mb-md-4 " >
+          <img class="card-img-top" src="{{ maskCard.image }}" alt="{{maskCard.imageAlt}}">
+          <div class="card-body alert-dark ">
+            <h5 class="card-title font-weight-bold">{{ maskCard.cardTitle }}</h5>
+            <p class="card-text">{{ maskCard.cardText }}
+            </p>
+            <h4 class="card-price font-weight-bold mt-auto mb-0 text-right">{{ maskCard.price}} Ft</h4>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
